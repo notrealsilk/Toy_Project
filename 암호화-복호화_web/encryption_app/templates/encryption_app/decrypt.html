@@ -1,0 +1,9 @@
+<h1>Decrypt a Word</h1>
+<form method="post">
+    {% csrf_token %}
+    <label for="word">Encrypted Word:</label>
+    <input type="text" id="word" name="word" required>
+    <label for="shift">Shift Key:</label>
+    <input type="number" id="shift" name="shift" required>
+    <button type="submit">Decrypt</button>
+</form>
