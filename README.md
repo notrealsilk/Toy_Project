@@ -1,6 +1,6 @@
 # MINI_Project
 
-작고 소중한 프로젝트
+- 작고 소중한 프로젝트
 ---
 ### Python
 - [단어테스트 ](https://github.com/notrealsilk/MINI_Project/tree/master/%EB%8B%A8%EC%96%B4%ED%85%8C%EC%8A%A4%ED%8A%B8)
