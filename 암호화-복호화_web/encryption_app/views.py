@@ -2,7 +2,7 @@ from django.shortcuts import render,redirect
 
 # Create your views here.
 def index(request):
-    return(request,'encryption_app/index.html')
+    return render(request,'encryption_app/index.html')
 
 def encrypt(request):
     if request.method == 'POST':

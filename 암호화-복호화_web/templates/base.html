@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <a href="{% url 'encrypyion_app:encrypt' %}">Encrypt a word</a> | <a href="{% url 'encrypyion_app:decrypt' %}">Decrypt a word</a>
-  {% block content %}
-  {% endblock content %}
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="{% url 'encryption_app:index' %}">Main</a> |
+    <a href="{% url 'encryption_app:encrypt' %}">암호화</a> |
+    <a href="{% url 'encryption_app:decrypt' %}">복호화</a>
+    {% block content %} {% endblock content %}
+  </body>
 </html>

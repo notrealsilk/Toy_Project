@@ -1,9 +1,11 @@
+{% extends "base.html" %} {% block content %}
 <h1>암호화</h1>
-<form method="post">
-    {% csrf_token %}
-    <label for="word">Word:</label>
-    <input type="text" id="word" name="word" required>
-    <label for="shift">Shift Key:</label>
-    <input type="number" id="shift" name="shift" required>
-    <button type="submit">Encrypt</button>
+<form action="{% url 'encryption_app:index' %}" method="post">
+  {% csrf_token %}
+  <label for="word">Word:</label>
+  <input type="text" id="word" name="word" required />
+  <label for="shift">Shift Key:</label>
+  <input type="number" id="shift" name="shift" required />
+  <button type="submit">Encrypt</button>
 </form>
+{% endblock content %}
