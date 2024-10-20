@@ -4,9 +4,9 @@ from .models import Encryption,Decryption
 class EncryptionForm(forms.ModelForm):
     class Meta:
         model = Encryption
-        field = '__all__'
+        fields = ('content','key')
 
 class DecryptionForm(forms.ModelForm):
     class Meta:
         model = Decryption
-        field = '__all__'
+        fields = ('content','key')
