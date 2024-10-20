@@ -10,19 +10,38 @@
 ## 기술 스택
 - **프레임워크**: Django
 - **언어**: Python, HTML
+---
+## 실행
 
-## 프로젝트 구조
-encryptor_project/ ├── encryptor_project/ │ ├── init.py │ ├── settings.py │ ├── urls.py │ └── wsgi.py ├── encryption_app/ │ ├── migrations/ │ ├── init.py │ ├── admin.py │ ├── apps.py │ ├── models.py │ ├── urls.py │ ├── views.py │ └── templates/ │ └── encryption_app/ │ ├── index.html │ ├── encrypt.html │ ├── decrypt.html │ └── result.html └── manage.py
+- 메인 페이지 (로그인 x)
+  
+  <img width="563" alt="스크린샷 2024-10-20 오후 8 45 53" src="https://github.com/user-attachments/assets/a7fa9795-83e4-4a9d-860e-c8baf14e5c94">
 
+- 메인 페이지 (로그인 o)
+  
+  <img width="564" alt="스크린샷 2024-10-20 오후 8 46 13" src="https://github.com/user-attachments/assets/2031b1c1-9fca-4500-8bbe-1757b80e395e">
+
+- 암호화
+  
+   <img width="563" alt="스크린샷 2024-10-20 오후 8 46 26" src="https://github.com/user-attachments/assets/ed2ebbd4-c94e-4247-8133-cfdcb73b9177">
+
+- 프로필 페이지
+
+   <img width="562" alt="스크린샷 2024-10-20 오후 8 46 34" src="https://github.com/user-attachments/assets/555671e5-e0d2-4904-aa18-9cf3d9e49f1a">
+
+- 복호화
+
+   <img width="564" alt="스크린샷 2024-10-20 오후 8 46 53" src="https://github.com/user-attachments/assets/ae3d1813-3577-4f5d-81fc-4a43240a7c1d">
+   
 ---
 
 ## 설치 및 실행 방법
 1. 프로젝트 클론
 
-   ```bash
-   git clone https://github.com/your-username/encryptor_project.git
-   cd encryptor_project
-   ```
+```bash
+git clone https://github.com/your-username/encryptor_project.git
+cd encryptor_project
+```
 
 2. 가상 환경 생성 및 활성화
 
@@ -48,9 +67,5 @@ encryptor_project/ ├── encryptor_project/ │ ├── init.py │ ├─
 - 복호화: 암호화된 단어와 키를 입력하여 원래 단어를 복원할 수 있습니다.
 
 ---
-### 진행 과정
 
-10/7
-- 프로젝트,암호화 앱, 계정 앱 생성 / 커스텀 유저 클래스 작성.등록 완
-- 앱 url 생성
-- encryption_app MTV생성
+  
