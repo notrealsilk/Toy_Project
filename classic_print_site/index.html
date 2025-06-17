@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <style>
+    
+    .Cyanotype,
+    .Gum-Printing,
+    .Van-Dyke-Printing{
+        /* 콘텐츠 크기에 따라 높이 자동 조정 */
+        min-height: 100vh;
+    }
+
+    #wrapper {
+      min-height: 100%;
+      /* footer 의 크기만큼 빼준다. */
+      margin-bottom: -100px;
+      /* footer 가 가려지지 않도록 적당한 pb 를 준다. */
+      padding-bottom: 100px;
+    }
+    
+    .picture-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    footer {
+      height: 100px;
+      background-color: black;
+      color: white;
+      /* 배치 */
+      /* 세로 가로 모두 가운데 정렬하는 가장 쉬운 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <!-- 상단 네비바 -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- 최 좌상단_아이콘 이미지 -->
+            <a class="navbar-brand" href="#">
+                <svg width="24px" height="24px" fill="currentColor" class="bi bi-egg-fried" viewBox="0 0 16 16">
+                    <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+                    <path d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z"/>
+                </svg>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- 네비바가 오른쪽(e)는 자동 = 왼쪽 정렬 / margin-bottom에 여백 2(0.5rem) 추가 /
+                lg사이즈 일 때는 요소 아래쪽에 여백 제거-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Cyanotype">Cyanotype</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Gum-Printing">Gum Printing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Van-Dyke-Printing">Van Dyke Printing</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 메인(content) -->
+    <main class="container row">
+        <!-- 시아노타입 -->
+        <section id="Cyanotype" class="Cyanotype col-12 col-sm-6 col-md-4 col-lg-3">
+          <div>
+            <h1 style="white-space: nowrap;">Cyanotype</h1>
+            <div class="picture-box">
+              <figure class="figure">
+                <img src="photo/cy_1.jpg" alt="시아노타입1" class="img-fluid">
+                <figcaption class="figure-caption text-end">파브리아노5중목300g,시아노2.5ml,태양광15분(맑음,14시경), 21X29.7(cm), 22.11.04</figcaption>
+              </figure>
+            </div>
+            <figure class="figure">
+              <img src="photo/cy_2.jpg" alt="시아노타입2" class="img-fluid">
+              <figcaption class="figure-caption text-end">면30수에염색,시아노3.5ml, 태양광20분(맑고구름½,14시30분경), 30X35(cm), 22.10.08</figcaption>
+            </figure>
+            <figure class="figure">
+              <img src="photo/cy_3.jpg" alt="시아노타입3" class="img-fluid">
+              <figcaption class="figure-caption text-end">면30수,시아노2.5ml, 소부기15분, 24X13(cm), 22.11.21</figcaption>
+            </figure>
+          </div>
+        </section>
+  
+        <!-- 검프린트 -->
+        <section id="Gum-Printing" class="Gum-Printing col-12 col-sm-6 col-md-4 col-lg-3">
+          <h1 style="white-space: nowrap;">Gum Printing</h1>
+          <figure class="figure">
+            <img src="photo/gum_1.jpg" alt="검프린트1" class="img-fluid">
+            <figcaption class="figure-caption text-end">띠에뽈로290g,검2.5ml, 물감0.5g, 소부기5분, 21X29.7(cm), 22.10.14</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="photo/gum_2.jpg" alt="검프린트2" class="img-fluid">
+            <figcaption class="figure-caption text-end">띠에뽈로290g,검2.5ml, 물감2g, 소부기5분, 21X29.7(cm), 22.10.28</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="photo/gum_3.jpg" alt="검프린트3" class="img-fluid">
+            <figcaption class="figure-caption text-end">로자스피나(미색)285g,검2.5ml, 물감1g, 태양13분(맑고구름½15시경), 21X29.7(cm), 22.11.04</figcaption>
+          </figure>
+        </section>
+  
+        <!-- 반다이크 프린트 -->
+        <section id="Van-Dyke-Printing" class="Van-Dyke-Printing col-12 col-sm-6 col-md-4 col-lg-3">
+          <h1 style="white-space: nowrap;">Van Dyke Printing</h1>
+          <figure class="figure">
+            <img src="photo/vb_1.jpg" alt="반다이크 프린트1" class="img-fluid">
+            <figcaption class="figure-caption text-end">파브리아노5285g,반다이크3ml,태양광3분(맑음,11시경), 21X29.7(cm), 22.11.11</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="photo/vb_2.jpg" alt="반다이크 프린트2" class="img-fluid">
+            <figcaption class="figure-caption text-end">파브리아노5중목300g,반다이크3ml,태양광3분(맑음,11시경), 21X29.7(cm), 22.11.04</figcaption>
+          </figure>
+          <figure class="figure">
+            <img src="photo/vb_3.jpg" alt="반다이크 프린트3" class="img-fluid">
+            <figcaption class="figure-caption text-end">파브리아노5중목300g,반다이크3ml,태양광3분(맑음,11시경), 21X29.7(cm), 22.11.04</figcaption>
+          </figure>
+        </section>
+
+    </main>
+
+    <!-- 푸터(footer)-->
+    <footer>
+        <span class="footer-span">&copy; 2024. Kang, MyungJoo.</span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+<!doctype html>
